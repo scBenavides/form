@@ -1,32 +1,51 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-	<title>Formulario metodo POST</title>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FORMULARIO</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<form action="recibe.php" method="POST">
-		<input type="text" placeholder="Nombre:" name="nombre">
-		<br>
-		<label> Sexo</label><br>
-		<label for="hombre">Hombre</label>
-		<input type="radio" name="sexo" value="hombre" id="hombre">
-		<br>
-		<label for="mujer">Mujer</label>
-		<input type="radio" name="sexo" value="mujer" id="mujer">
-		<br>
-		 <label> Fecha Nacimiento</label><br>
-		<select name="year" id="year">
-		
-			<option value ="2000">2000</option>
-			<option value ="2001">2001</option>
-			<option value ="2002">2002</option>
-		</select>
-		<br>
-		<label for= "terminos">Aceptas los terminos?</label>
-		<input type="checkbox" name="terminos" id="terminos" value="ok">
-		<br>
-		<input type="submit" value ="enviar">
-	</form>
+	<header>
+		<nav>
+			<a href="index.html"></a>
+			<ul>
+				<a href="">INGRESAR</a>
+				<a href="">REGISTRAR</a>
+				<a href="">EMPLEADOS</a>
+				<a href="">SALIR</a>
+			</ul>
+		</nav>
+        <div id="hero">
+
+            <h2>EMPLEADOS</h2>
+
+        </div>
+	</header>
+    <Main>
+        <table border="1">
+            <!-- Fila de encabezado -->
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Puesto</th>
+                <th>Salario</th>
+                <th><div class=""></div></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Santiago</td>
+                <td>Benavides</td>
+                <td>santiagobenavides132@gmail.com</td>
+                <td>Aprendiz</td>
+                <td>$650,000</td>
+                <td>
+                <button class="editar">EDITAR</button>
+                </td>
+                <td><button class="borrar">BORRAR</buttton></td>
+            </tr>
+    </Main>
 </body>
 </html>
